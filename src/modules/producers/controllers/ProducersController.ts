@@ -18,7 +18,6 @@ export default class ProducersController {
     });
   }
   public async create(request: Request, response: Response): Promise<Response> {
-    console.log(request.body);
     const { cpf_cnpj, producer_name, farm_name, city, state, total_area_ha, cultivable_area_ha, vegetation_area_ha, crops } = request.body;
     const createProducerService = new CreateProducerService();
 
@@ -34,7 +33,6 @@ export default class ProducersController {
       crops,
     });
 
-    console.log('created');
 
     return response.status(201).json({
       success: true,

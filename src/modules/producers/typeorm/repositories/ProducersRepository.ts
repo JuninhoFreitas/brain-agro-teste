@@ -30,7 +30,6 @@ export class ProducersRepository extends Repository<Producers> {
     vegetation_area_ha,
     crops,
   }: ICreateProducer): Promise<Producers | any> {
-    console.log('createProducer');
     const producer = await getRepository(Producers)
       .createQueryBuilder()
       .insert()

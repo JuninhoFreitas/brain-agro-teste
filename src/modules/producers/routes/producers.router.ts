@@ -7,10 +7,7 @@ const producersController = new ProducersController();
 
 producersRouter.get('/', producersSchema.listProducers, producersController.list);
 producersRouter.get('/dashboard', producersSchema.listProducers, producersController.dashboard);
-producersRouter.post('/', producersSchema.createProducer, producersController.create, ((req,res,err) => {
-  console.log('er', err);
-  console.log(err);
-}));
+producersRouter.post('/', producersSchema.createProducer, producersController.create);
 producersRouter.delete('/:producer_id', producersSchema.deleteProducer, producersController.delete);
 producersRouter.put('/:producer_id', producersSchema.updateProducer, producersController.update);
 

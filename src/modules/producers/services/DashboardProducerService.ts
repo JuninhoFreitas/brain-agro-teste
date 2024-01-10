@@ -50,7 +50,6 @@ class DashboardProducersService {
   async _getTotalFarmArea(): Promise<number> {
     const producersRepository = getCustomRepository(ProducersRepository);
     const result = await producersRepository.query('SELECT SUM(total_area_ha) AS "totalFarmArea" FROM rural_producers where deleted_at is null');
-    console.log('result', result);
     return result[0].totalFarmArea || 0;
   }
 
