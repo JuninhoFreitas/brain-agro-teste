@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=auto height=auto src="https://i.imgur.com/3KU5qXn.png" alt="Project logo"></a>
+ <img width=auto height=auto src="https://avatars.githubusercontent.com/u/63860764?s=200&v=4" alt="Project logo"></a>
 </p>
 
 <h3 align="center">API - Brain Agro</h3>
