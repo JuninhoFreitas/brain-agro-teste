@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: user_agro
+      POSTGRES_PASSWORD: pass_agro
+      POSTGRES_DB: brainagro
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
